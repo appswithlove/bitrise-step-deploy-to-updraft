@@ -11,12 +11,12 @@ upload_task() {
         -X PUT https://getupdraft.com/api/app_upload/$APP_KEY/$API_KEY/
 }
 
-cat "$output_file"
-
 if ! upload_task; then
     err "Uploading error"
     exit 1
 fi
+
+cat "$output_file"
 
 envman add --key UPDRAFT_DEPLOY_STEP_OUTPUT --value "$output_file"
 
