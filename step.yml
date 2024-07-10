@@ -1,0 +1,89 @@
+#
+# A couple of useful guides & docs:
+#
+# - Main Bitrise CLI docs: https://github.com/bitrise-io/bitrise/tree/master/_docs
+# - Step Development Guideline: https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
+# - Bitrise.yml format spec: https://github.com/bitrise-io/bitrise/blob/master/_docs/bitrise-yml-format-spec.md
+# - Bitrise docs: http://devcenter.bitrise.io/
+# - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
+
+title: |-
+  deploy-to-updraft
+summary: |
+  Deploy to Getupdraft.com
+description: |
+  Deploy to Getupdraft.com
+website: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
+source_code_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
+support_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android/issues
+
+project_type_tags:
+   - ios
+#   - macos
+   - android
+   - xamarin
+   - react-native
+   - cordova
+   - ionic
+   - flutter
+
+type_tags:
+  - deploy
+
+is_always_run: false
+is_skippable: false
+run_if: ""
+
+
+deps:
+  brew:
+  - name: curl
+  apt_get:
+  - name: curl
+  
+
+toolkit:
+  bash:
+    entry_file: step.sh
+
+
+inputs:
+  - api_key: ""
+    opts:
+      title: "Updraft API_KEY"
+      summary: "Your API Key you find in your Profile."
+      is_expand: true
+      is_required: true
+      is_sensitive: true
+  - app_key: ""
+    opts:
+      title: "Updraft APP_KEY"
+      summary: "The App Key you will find on the application overview. The App key differs for each environment."
+      is_expand: true
+      is_required: true
+      is_sensitive: true
+  - app_path: ""
+    opts:
+      title: "App file path"
+      summary: "Path to app's binary file (IPA/APK/AAB) to upload"
+      description: |
+        Path to app's binary file (IPA/APK/AAB) to upload.
+        $BITRISE\_APK\_PATH, $BITRISE\_IPA\_PATH, and so on.
+      is_required: true
+  - release_notes: ""
+    opts:
+      title: "Release notes"
+      summary: "Release notes"
+      description: |
+        Message to show on build download page
+      is_required: false
+
+outputs:
+  - UPDRAFT_DEPLOY_STEP_OUTPUT:
+    opts:
+      title: "Deploy Updraft step output"
+      summary: "Deploy Updraft step output json"
+      description: |
+        Description of this output.
+
+        Can be Markdown formatted text.
