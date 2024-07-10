@@ -8,7 +8,7 @@ upload_task() {
         -o "$output_file" \
         -F whats_new="$release_notes" \
         -F "app=@$app_path" \
-        -X PUT https://getupdraft.com/api/app_upload/$APP_KEY/$API_KEY/
+        -X PUT https://getupdraft.com/api/app_upload/$app_key/$api_key/
 }
 
 if ! upload_task; then
