@@ -7,6 +7,7 @@ upload_task() {
     curl --silent -f \
         -o "$output_file" \
         -F whats_new="$release_notes" \
+        -F build_type="bitrise" \
         -F "app=@$app_path" \
         -X PUT https://getupdraft.com/api/app_upload/$app_key/$api_key/
 }
