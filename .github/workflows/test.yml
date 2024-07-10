@@ -20,8 +20,8 @@ jobs:
           bitrise setup
       - name: Prepare secrets 
         run: ruby -rerb -e 'File.write(".bitrise.secrets.yml", ERB.new(File.read(ARGV[0])).result(binding))' .bitrise.secrets.yml.erb
-      - name: Run tests
-        run: bitrise run test
         env:
           TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
           TEST_APP_KEY: ${{ secrets.TEST_APP_KEY }}
+      - name: Run tests
+        run: bitrise run test
