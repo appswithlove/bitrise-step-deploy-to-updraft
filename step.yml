@@ -1,18 +1,9 @@
-#
-# A couple of useful guides & docs:
-#
-# - Main Bitrise CLI docs: https://github.com/bitrise-io/bitrise/tree/master/_docs
-# - Step Development Guideline: https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
-# - Bitrise.yml format spec: https://github.com/bitrise-io/bitrise/blob/master/_docs/bitrise-yml-format-spec.md
-# - Bitrise docs: http://devcenter.bitrise.io/
-# - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
-
 title: |-
   deploy-to-updraft
 summary: |
-  Deploy to Getupdraft.com
+  Distribute your app's builds to your team and testers
 description: |
-  Deploy to Getupdraft.com
+  This step will help you to upload your app's builds to Updraft. For more information please reach [Updraft](https://getupdraft.com) site.
 website: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
 source_code_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
 support_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android/issues
@@ -51,7 +42,7 @@ inputs:
   - api_key: ""
     opts:
       title: "Updraft API_KEY"
-      summary: "Your API Key you find in your Profile."
+      summary: "Your API Key you will find in your Profile."
       is_expand: true
       is_required: true
       is_sensitive: true

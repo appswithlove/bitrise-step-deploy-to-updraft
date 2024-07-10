@@ -1,6 +1,6 @@
 # deploy-to-updraft
 
-Bitrise Step to upload app builds to [Updraft](https://getupdraft.com) 
+Bitrise Step to upload your app's builds to [Updraft](https://getupdraft.com) 
 
 
 ## How to use this Step
