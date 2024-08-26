@@ -1,16 +1,15 @@
 title: |-
-  deploy-to-updraft
+  Deploy to Updraft
 summary: |
   Distribute your app's builds to your team and testers
 description: |
   This step will help you to upload your app's builds to Updraft. For more information please reach [Updraft](https://getupdraft.com) site.
-website: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
-source_code_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android
-support_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft-android/issues
+website: https://github.com/appswithlove/bitrise-step-deploy-to-updraft
+source_code_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft
+support_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft/issues
 
 project_type_tags:
    - ios
-#   - macos
    - android
    - xamarin
    - react-native
@@ -75,6 +74,4 @@ outputs:
       title: "Deploy Updraft step output"
       summary: "Deploy Updraft step output json"
       description: |
-        Description of this output.
-
-        Can be Markdown formatted text.
+        JSON reponse of Updraft backend 
