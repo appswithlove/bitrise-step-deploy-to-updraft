@@ -6,20 +6,18 @@ description: |
   This step will help you to upload your app versions to [Updraft](https://getupdraft.com) for further app distribution. 
   Updraft is a comprehensive platform for app distribution and beta testing, especially for iOS and Android applications. It supports developers in managing app deployments, handling app beta releases, and facilitating feedback collection from testers. 
 
-Key features include:
+  Key features include:
+  - App Management: Users can manage all app settings from a centralized dashboard, including adding applications to a project, adding deployment environment, upload app versions, manage settings
+  - App Distribution: The platform allows easy distribution of apps through various channels like email notifications, QR code installations, or public link installation. Testers and Groups can be added to each app release. It also supports auto-updates via an in-app notification system if the Updraft SDK is integrated.
+  - Build Management: Updraft simplifies the process of uploading, resigning, and managing different iOS and Android app versions, helping ensure that the right versions reach the right testers and members.
+  - Resigning: Updraft allows you to resign iOS apps with new distribution certificates and provisioning profiles. For Android you can add your keystore and resign your uploaded .aab files with your keystore to ensure your play store release will get accepeted.
+  - Integration Support: The platform integrates with multiple CI/CD tools and third-party services like Slack, Microsoft Teams, Gitlab, Teamcity and Jenkins, making it easier to incorporate into existing workflows. Updraft also has available Plugins for Fastlane and Gradle.
 
-- App Management: Users can manage all app settings from a centralized dashboard, including adding applications to a project, adding deployment environment, upload app versions, manage settings
-- App Distribution: The platform allows easy distribution of apps through various channels like email notifications, QR code installations, or public link installation. Testers and Groups can be added to each app release. It also supports auto-updates via an in-app notification system if the Updraft SDK is integrated. 
-- Build Management: Updraft simplifies the process of uploading, resigning, and managing different iOS and Android app versions, helping ensure that the right versions reach the right testers and members.
-- Resigning: Updraft allows you to resign iOS apps with new distribution certificates and provisioning profiles. For Android you can add your keystore and resign your uploaded .aab files with your keystore to ensure your play store release will get accepeted. 
-- Integration Support: The platform integrates with multiple CI/CD tools and third-party services like Slack, Microsoft Teams, Gitlab, Teamcity and Jenkins, making it easier to incorporate into existing workflows. Updraft also has available Plugins for Fastlane and Gradle.
+  These features make GetUpdraft a robust solution for teams looking to streamline their internal app testing and app distribution processes.
 
-These features make GetUpdraft a robust solution for teams looking to streamline their internal app testing and app distribution processes.
-
-Useful links:
-- [Updraft](https://getupdraft.com)
-- [Updraft Documentation](https://docs.getupdraft.com)
-
+  Useful links:
+  - [Updraft](https://getupdraft.com)
+  - [Updraft Documentation](https://docs.getupdraft.com)
   
 website: https://github.com/appswithlove/bitrise-step-deploy-to-updraft
 source_code_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft
@@ -28,7 +26,6 @@ support_url: https://github.com/appswithlove/bitrise-step-deploy-to-updraft/issu
 project_type_tags:
    - ios
    - android
-   - xamarin
    - react-native
    - cordova
    - ionic
