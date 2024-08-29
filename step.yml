@@ -1,7 +1,7 @@
 title: |-
   Deploy to Updraft
 summary: |
-  Distribute your app's builds to your team and testers
+  Distribute your app's builds (ipa/apk/aab) to your team and testers
 description: |
   This step will help you to upload your app versions to [Updraft](https://getupdraft.com) for further app distribution. 
   Updraft is a comprehensive platform for app distribution and beta testing, especially for iOS and Android applications. It supports developers in managing app deployments, handling app beta releases, and facilitating feedback collection from testers. 
