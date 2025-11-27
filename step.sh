@@ -9,7 +9,7 @@ upload_task() {
         -F whats_new="$release_notes" \
         -F build_type="bitrise" \
         -F "app=@$app_path" \
-        -X PUT https://getupdraft.com/api/app_upload/$app_key/$api_key/
+        -X PUT https://app.getupdraft.com/api/app_upload/$app_key/$api_key/
 }
 
 if ! upload_task; then
